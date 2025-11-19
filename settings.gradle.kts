@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Rat Android SDK Example"
 include(":app")
+include(":rat-ads")
