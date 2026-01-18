@@ -57,5 +57,7 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-    implementation (project(":rat-ads"))
+    
+    // RatAds SDK (from sibling project via includeBuild)
+    implementation("com.example:rat-ads")
 }

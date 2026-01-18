@@ -20,5 +20,12 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "Rat Android SDK Example"
+
+// Include the SDK from the sibling project
+includeBuild("../rat-android-sdk") {
+    dependencySubstitution {
+        substitute(module("com.example:rat-ads")).using(project(":rat-ads"))
+    }
+}
+
 include(":app")
-include(":rat-ads")
